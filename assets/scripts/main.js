@@ -16,6 +16,7 @@ function change(){
     }
 }
 
+document.getElementById("horn-sound").addEventListener("click", change);
 
 function horn(){
 
@@ -48,3 +49,4 @@ function plays3(){
 
 
 window.addEventListener('load',doFirst,false);
+}
