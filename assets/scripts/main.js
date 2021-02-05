@@ -11,6 +11,7 @@ function horn(){
     else if(document.getElementById("radio-party-horn").checked){
         document.getElementById("sound-image").src = "./assets/media/images/party-horn.svg";
     }
+}
 
     horn1=document.getElementById('radio-air-horn');
     horn2=document.getElementById('radio-car-horn');
