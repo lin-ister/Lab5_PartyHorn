@@ -4,7 +4,7 @@ window.onload = function () {
     document.getElementById("radio-air-horn").addEventListener("click", change);
     document.getElementById("radio-car-horn").addEventListener("click", change);
     document.getElementById("radio-party-horn").addEventListener("click", change);
-    
+    document.getElementById("horn-btn").addEventListener("click", horn);
 }
    
 function change(){
@@ -19,8 +19,6 @@ function change(){
     }
 }
 
-
-document.getElementById("horn-sound").addEventListener("click", horn);
 
 function horn(){
     if(document.getElementById("radio-air-horn").checked){
