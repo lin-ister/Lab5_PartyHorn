@@ -1,5 +1,21 @@
 // main.js
 
+<fieldset id="audio-selection">
+    <div id="radio-air-horn-container">
+    <input type="radio" id="radio-air-horn" name="radio-sound" checked>
+    <label for="radio-air-horn">Air Horn</label>
+    </div>
+    <div id="radio-car-horn-container">
+    <input type="radio" id="radio-car-horn" name="radio-sound">
+    <label for="radio-car-horn">Car Horn</label>
+    </div>
+    <div id="radio-party-horn-container">
+    <input type="radio" id="radio-party-horn" name="radio-sound">
+    <label for="radio-party-horn">Party Horn</label>
+    </div>
+</fieldset>
+
+
 if(document.getElementById("radio-air-horn").checked){
     document.getElementById("sound-image").src = "./assets/media/images/air-horn.svg";
 }
