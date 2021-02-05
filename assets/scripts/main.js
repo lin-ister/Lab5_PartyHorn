@@ -4,7 +4,7 @@ document.getElementById("radio-air-horn").addEventListener("click", change);
 document.getElementById("radio-car-horn").addEventListener("click", change);
 document.getElementById("radio-party-horn").addEventListener("click", change);
 
-change(){
+function change(){
     if(document.getElementById("radio-air-horn").checked){
         document.getElementById("sound-image").src = "./assets/media/images/air-horn.svg";
     }
