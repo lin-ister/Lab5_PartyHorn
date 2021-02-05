@@ -4,7 +4,7 @@ window.onload = function () {
     document.getElementById("radio-air-horn").addEventListener("click", change);
     document.getElementById("radio-car-horn").addEventListener("click", change);
     document.getElementById("radio-party-horn").addEventListener("click", change);
-    document.getElementById("horn-btn").addEventListener("click", horn).preventDefault();
+    document.getElementById("horn-btn").addEventListener("click", horn);
 }
    
 function change(){
@@ -20,7 +20,8 @@ function change(){
 }
 
 
-function horn(){
+function horn(event){
+    event.preventDefault();
     if(document.getElementById("radio-air-horn").checked){
         var audio1 = new Audio('./assets/media/audio/air-horn.mp3');
         audio1.play();
