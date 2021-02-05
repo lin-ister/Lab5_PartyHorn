@@ -16,14 +16,21 @@ function change(){
     }
 }
 
-document.getElementById("horn-sound").addEventListener("click", change);
+/*
+document.getElementById("horn-sound").addEventListener("click", horn);
 
 function horn(){
+    if(document.getElementById("radio-air-horn").checked){
+        horn1=document.getElementById('radio-air-horn');
+    }
+    else if(document.getElementById("radio-car-horn").checked){
+        horn2=document.getElementById('radio-car-horn');
+    }
+    else if(document.getElementById("radio-party-horn").checked){
+        horn3=document.getElementById('radio-party-horn'); 
+    }
 
 
-    horn1=document.getElementById('radio-air-horn');
-    horn2=document.getElementById('radio-car-horn');
-    horn3=document.getElementById('radio-party-horn');
     var audio1 = new Audio('audio/air-horn.mp3');
     var audio2 = new Audio('audio/car-horn.mp3');
     var audio3 = new Audio('audio/party-horn.mp3');
@@ -45,8 +52,6 @@ function plays2(){
 
 function plays3(){
     audio3.play();
-}
+} */
 
 
-window.addEventListener('load',doFirst,false);
-}
