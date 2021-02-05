@@ -24,25 +24,17 @@ document.getElementById("horn-sound").addEventListener("click", horn);
 
 function horn(){
     if(document.getElementById("radio-air-horn").checked){
-        var audio1 = new Audio('audio/air-horn.mp3');
+        var audio1 = new Audio('./assets/media/audio/air-horn.mp3');
         audio1.play();
     }
     else if(document.getElementById("radio-car-horn").checked){
-        var audio2 = new Audio('audio/car-horn.mp3');
+        var audio2 = new Audio('./assets/media/audio/car-horn.mp3');
         audio2.play();
     }
     else if(document.getElementById("radio-party-horn").checked){
-        var audio3 = new Audio('audio/party-horn.mp3');
+        var audio3 = new Audio('./assets/media/audio/party-horn.mp3');
         audio3.play();
     }
-
-
-    var audio1 = new Audio('audio/air-horn.mp3');
-    var audio2 = new Audio('audio/car-horn.mp3');
-    var audio3 = new Audio('audio/party-horn.mp3');
-
-
-
 }
 
 
